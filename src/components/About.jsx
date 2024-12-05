@@ -20,48 +20,52 @@ const About = () => {
               organizational success and personal growth.
             </p>
             <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+              <div className="flex flex-col md:flex-row md:items-center mb-4">
+                <label
+                  htmlFor="htmlandcss"
+                  className="w-full md:w-2/12 text-sm md:text-base mb-2 md:mb-0"
+                >
                   HTML & CSS
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-11/12"></div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+              <div className="flex flex-col md:flex-row md:items-center mb-4">
+                <label
+                  htmlFor="htmlandcss"
+                  className="w-full md:w-2/12 text-sm md:text-base mb-2 md:mb-0"
+                >
                   JAVASCRIPT
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-10/12"></div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+              <div className="flex flex-col md:flex-row md:items-center mb-4">
+                <label
+                  htmlFor="htmlandcss"
+                  className="w-full md:w-2/12 text-sm md:text-base mb-2 md:mb-0"
+                >
                   REACT JS
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-11/12"></div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+              <div className="flex flex-col md:flex-row md:items-center mb-4">
+                <label
+                  htmlFor="htmlandcss"
+                  className="w-full md:w-2/12 text-sm md:text-base mb-2 md:mb-0"
+                >
                   TAILWIND
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-11/12"></div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  REACT JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-11/12"></div>
-                </div>
-              </div>
             </div>
-            <div className="mt-12 flex justify-between text-center">
+            <div className="mt-12 flex flex-wrap gap-6 justify-center text-center md:justify-between">
               <div>
                 <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                   3+
