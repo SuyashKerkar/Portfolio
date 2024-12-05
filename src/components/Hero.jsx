@@ -4,7 +4,7 @@ import HeroImg from "../assets/my.jpg";
 
 const Hero = () => {
   return (
-    <div className="bg-black text-white text-center py-16">
+    <div className="bg-black text-white text-center py-16" id="home">
       <img
         src={HeroImg}
         alt=""
