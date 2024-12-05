@@ -3,6 +3,22 @@ import Heroimg from "../assets/my image.jpg";
 import HeroImg from "../assets/my.jpg";
 
 const Hero = () => {
+  const handleDownload = () => {
+    const resumeUrl =
+      "https://drive.google.com/file/d/1ANsiFYYuQOcFFfTiCUwrHmaP_mqXwf3z/view?usp=sharing";
+
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Suyash_Kerkar_Resume.pdf";
+
+    // Trigger the download
+    link.click();
+
+    // Clean up the temporary link
+    link.remove();
+  };
+
   return (
     <div className="bg-black text-white text-center py-16" id="home">
       <img
@@ -24,7 +40,10 @@ const Hero = () => {
         <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
           Connect With Me
         </button>
-        <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
+        <button
+          onClick={handleDownload}
+          className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
+        >
           Resume
         </button>
       </div>
